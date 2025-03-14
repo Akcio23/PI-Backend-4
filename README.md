@@ -1,28 +1,43 @@
-##Tipo e descrição 🦄
-O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
+📌 Tipos e Descrição dos Commits Semânticos
 
-feat- Commits do tipo feat indicam que seu trecho de código está incluindo um novo recurso (se relaciona com o MINOR do versionamento semântico).
+Os commits semânticos seguem uma estrutura padronizada para facilitar o entendimento das alterações realizadas no código. Abaixo estão os principais tipos de commits e suas respectivas descrições:
 
-fix - Commits do tipo fix indicam que seu trecho de código commitado está solucionando um problema (bug fix), (se relaciona com o PATCH do versionamento semântico).
+🚀 Tipos de Commits
 
-docs - Commits do tipo docs indicam que houveram mudanças na documentação, como por exemplo no Readme do seu repositório. (Não inclui alterações em código).
+🎯 Funcionalidades e Correções
 
-test - Commits do tipo test são utilizados quando são realizadas alterações em testes, seja criando, alterando ou excluindo testes unitários. (Não inclui alterações em código)
+feat: Indica que um novo recurso foi adicionado ao código. (Relacionado ao MINOR do versionamento semântico)
 
-build - Commits do tipo build são utilizados quando são realizadas modificações em arquivos de build e dependências.
+fix: Indica que um bug foi corrigido. (Relacionado ao PATCH do versionamento semântico)
 
-perf - Commits do tipo perf servem para identificar quaisquer alterações de código que estejam relacionadas a performance.
+📖 Documentação
 
-style - Commits do tipo style indicam que houveram alterações referentes a formatações de código, semicolons, trailing spaces, lint... (Não inclui alterações em código).
+docs: Usado para alterações na documentação, como no README. (Não inclui alterações no código)
 
-refactor - Commits do tipo refactor referem-se a mudanças devido a refatorações que não alterem sua funcionalidade, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
+🧪 Testes
 
-chore - Commits do tipo chore indicam atualizações de tarefas de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
+test: Indica alterações nos testes unitários, seja criação, modificação ou remoção. (Não inclui alterações no código)
 
-ci - Commits do tipo ci indicam mudanças relacionadas a integração contínua (continuous integration).
+🔧 Build e Configuração
 
-raw - Commits do tipo raw indicam mudanças relacionadas a arquivos de configurações, dados, features, parâmetros.
+build: Usado para modificações em arquivos de build e dependências.
 
-cleanup - Commits do tipo cleanup são utilizados para remover código comentado, trechos desnecessários ou qualquer outra forma de limpeza do código-fonte, visando aprimorar sua legibilidade e manutenibilidade.
+ci: Refere-se a mudanças na integração contínua (Continuous Integration).
 
-remove - Commits do tipo remove indicam a exclusão de arquivos, diretórios ou funcionalidades obsoletas ou não utilizadas, reduzindo o tamanho e a complexidade do projeto e mantendo-o mais organizado.
+chore: Atualizações de tarefas de build, configurações ou pacotes, como adicionar um item ao .gitignore. (Não inclui alterações no código)
+
+raw: Alterações em arquivos de configuração, dados, features e parâmetros.
+
+⚡ Performance e Estilo
+
+perf: Alterações que impactam o desempenho do código.
+
+style: Alterações estéticas e de formatação, como indentação, espaços, ponto e vírgula, linting. (Não inclui alterações no código)
+
+🔄 Refatoração e Organização
+
+refactor: Alterações que melhoram a estrutura do código sem modificar sua funcionalidade.
+
+cleanup: Remoção de código comentado, trechos desnecessários ou qualquer outro tipo de limpeza para melhorar a legibilidade e manutenibilidade.
+
+remove: Exclusão de arquivos, diretórios ou funcionalidades obsoletas para reduzir a complexidade do projeto.
