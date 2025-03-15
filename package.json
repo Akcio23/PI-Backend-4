@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "axios": "^1.8.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  },
+  "name": "pi-4-semestre",
+  "version": "1.0.0",
+  "description": "Os commits semânticos seguem uma estrutura padronizada para facilitar o entendimento das alterações realizadas no código. Abaixo estão os principais tipos de commits e suas respectivas descrições:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
