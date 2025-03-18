@@ -9,8 +9,8 @@ const user = {
     password: 1234
 }
 
-class LoginController {
-    async login(req, res) { 
+class ckeckoutController {
+    async signin(req, res) { 
         
         const tokenData = {
             name: user.name,
@@ -30,4 +30,4 @@ class LoginController {
     }
 }
 
-export default LoginController
+export default ckeckoutController
