@@ -9,9 +9,6 @@ dotenv.config({ path: '.env' });
 
 const test = process.env.PORT
 
-console.log(test)
-
-
 //database
 conectDataBase()
 

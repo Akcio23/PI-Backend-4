@@ -6,7 +6,7 @@ async function login (req, res) {
 
     const { email, password } = req.body
 
-    const user = await User.findOne({ email: email})
+    const user = await User.findOne({ email })
 
     if (!user){
         return res.status(401).json({ error: "Invalid credentials" })

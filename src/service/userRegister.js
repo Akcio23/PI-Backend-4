@@ -20,7 +20,7 @@ async function register(req, res){
             })
         }
         
-        const checkEmail = await User.findOne({email: email})
+        const checkEmail = await User.findOne({ email })
 
         if (checkEmail){
             return res.status(500).json({
