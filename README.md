@@ -1,46 +1,81 @@
-# 📌 Tipos e Descrição dos Commits Semânticos
+# Authentication API - JWT with MongoDB and bcrypt
 
-Os commits semânticos seguem uma estrutura padronizada para facilitar o entendimento das alterações realizadas no código. Abaixo estão os principais tipos de commits e suas respectivas descrições:
+This is a simple API for user authentication, with **registration** and **login** features, using JWT (JSON Web Tokens) for authentication, MongoDB as the database, and bcrypt for password encryption.
 
-## 🚀 Tipos de Commits
+## Features
 
-### 🎯 Funcionalidades e Correções
+- **User Registration**: Allows a new user to register on the platform.
+- **User Login**: Allows an existing user to log in and receive a JWT token for authentication in other routes.
 
-- **feat:** Indica que um novo recurso foi adicionado ao código. *(Relacionado ao **MINOR** do versionamento semântico)*
-- **fix:** Indica que um bug foi corrigido. *(Relacionado ao **PATCH** do versionamento semântico)*
+## Technologies Used
 
----
+- **Node.js**: JavaScript runtime environment for the server.
+- **Express.js**: Framework for building the API.
+- **MongoDB**: NoSQL database for storing user data.
+- **Mongoose**: ODM (Object Document Mapping) for interacting with MongoDB.
+- **bcryptjs**: Library for password encryption and verification.
+- **jsonwebtoken**: Library for creating and verifying JWT tokens.
+- **dotenv**: For loading environment variables.
 
-### 📖 Documentação
+# Prerequisites
+Before running the application, make sure you have the following tools installed:
 
-- **docs:** Usado para alterações na documentação, como no README. *(Não inclui alterações no código)*
+- **Node.js** (version 14 or higher)
+- **MongoDB** (local or using MongoDB Atlas)
 
----
+# Installation
+- 1) Clone the repository:
+git **clone** https://github.com/Akcio23/PI-4-semestre
 
-### 🧪 Testes
+- 2) Install the dependencies:
+- **npm install**
 
-- **test:** Indica alterações nos testes unitários, seja criação, modificação ou remoção. *(Não inclui alterações no código)*
+- 3) Create a .env file at the root of the project with the following variables:
 
----
+- DATABASE_URL=mongodb://localhost:27017/database-name
+- KEY=your-secret-key
 
-### 🔧 Build e Configuração
+- 4) Start the server:
+- **npm run dev**
 
-- **build:** Usado para modificações em arquivos de build e dependências.
-- **ci:** Refere-se a mudanças na integração contínua (**Continuous Integration**).
-- **chore:** Atualizações de tarefas de build, configurações ou pacotes, como adicionar um item ao `.gitignore`. *(Não inclui alterações no código)*
-- **raw:** Alterações em arquivos de configuração, dados, features e parâmetros.
+# Endpoints
 
----
+##  POST /login/signup
 
-### ⚡ Performance e Estilo
+- Registers a new user. The user needs to provide a user, email, password and confirmedPassword.
 
-- **perf:** Alterações que impactam o desempenho do código.
-- **style:** Alterações estéticas e de formatação, como indentação, espaços, ponto e vírgula, linting. *(Não inclui alterações no código)*
+{
+    "user": "test",
+    "email": "test@gmail.com",
+    "password": "test",
+    "confirmedPassword": "test"
+}
 
----
+### Response(Sucess - 200)
+{
+    message: user created successfully"
+}
 
-### 🔄 Refatoração e Organização
+### Response(Error-400)
+{
+    message: Error creating user
+}
 
-- **refactor:** Alterações que melhoram a estrutura do código sem modificar sua funcionalidade.
-- **cleanup:** Remoção de código comentado, trechos desnecessários ou qualquer outro tipo de limpeza para melhorar a legibilidade e manutenibilidade.
-- **remove:** Exclusão de arquivos, diretórios ou funcionalidades obsoletas para reduzir a complexidade do projeto.
+## POST/login/signin
+
+- Logs in an existing user. The user needs to provide the email and password.
+
+{
+  "email": "email@domain.com",
+  "password": "secret-password"
+}
+
+### Response(Sucess - 200)
+{
+  "token": "your-generated-jwt-token"
+}
+
+### Response(Error-400)
+{
+  "message": "Invalid credentials"
+}
