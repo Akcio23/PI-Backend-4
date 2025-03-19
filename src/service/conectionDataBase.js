@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv"
 
-dotenv.config({ path: '../../.env' });
-const dbUrl = process.env.DATABASE_URL || 'mongodb+srv://PI-user-admin:samuelgostoso123@cluster0.dzi1v.mongodb.net/pi'
+dotenv.config({ path: '.env' });
+const dbUrl = process.env.DATABASE_URL
+
 
 const conectDataBase = () =>{
     mongoose.connect(dbUrl)

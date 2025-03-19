@@ -1,10 +1,11 @@
 import { Router } from "express";
-import ckeckoutController  from "../controllers/controllersLogin.js"
+import checkoutController  from "../controllers/checkoutController.js"
 
 const  routercheckout = Router()
 
-const checkout =  new ckeckoutController()
+const checkout =  new checkoutController()
 
-routercheckout.get("/signin", checkout.signin)
+routercheckout.post("/signin", checkout.signin)
+routercheckout.post("/signup", checkout.signup)
 
 export default routercheckout
