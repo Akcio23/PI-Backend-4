@@ -3,7 +3,7 @@ import getUser from "../service/getUser.js"
 class UserController{
 
     async getUser(req, res){
-        const { email } = req.body
+        const { email } = req.query
     
         if( !email ){
             return res.status(401).json({
@@ -18,7 +18,7 @@ class UserController{
                 message: 'user not found'
             })
         }
-    
+
         return res.status(201).json({ user })
     
     }

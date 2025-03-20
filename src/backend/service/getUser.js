@@ -1,5 +1,5 @@
 import User from '../models/User.js';
-import userSerialaizer from '../serializer/userSerializer.js';
+import userSerialaizer from '../serialaizer/userSerialaizer.js';
 
 export default async function getUser( email ){
 

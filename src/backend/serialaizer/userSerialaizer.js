@@ -1,4 +1,4 @@
-function userSerializer(user) {
+function userSerialaizer(user) {
     return {
         _id: user._id.toString(),
         email: user.email,
@@ -6,4 +6,4 @@ function userSerializer(user) {
     };
 }
 
-export default userSerializer;
+export default userSerialaizer;

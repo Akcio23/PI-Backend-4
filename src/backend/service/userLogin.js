@@ -1,6 +1,6 @@
 import User from '../models/User.js';
 import bcrypt from 'bcrypt';
-import userSerialaizer from '../serializer/userSerializer.js';
+import userSerialaizer from '../serialaizer/userSerialaizer.js'
 
 async function login (req, res) {
 
