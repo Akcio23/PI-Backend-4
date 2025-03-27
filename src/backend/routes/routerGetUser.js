@@ -1,6 +1,6 @@
-import { Router } from "express";
-import UserController from "../controllers/userController.js";
-import verifyAuth from "../middleware/verifyAuth.js";
+import { Router } from 'express'
+import UserController from '../controllers/userController.js'
+import verifyAuth from '../middleware/verifyAuth.js'
 
 const routerGetUser = Router()
 

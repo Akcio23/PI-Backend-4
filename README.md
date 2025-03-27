@@ -18,47 +18,51 @@ This is a simple API for user authentication, with **registration** and **login*
 - **dotenv**: For loading environment variables.
 
 # Prerequisites
+
 Before running the application, make sure you have the following tools installed:
 
 - **Node.js** (version 14 or higher)
 - **MongoDB** (local or using MongoDB Atlas)
 
 # Installation
-- 1) Clone the repository:
-git **clone** https://github.com/Akcio23/PI-4-semestre
 
-- 2) Install the dependencies:
+- 1. Clone the repository:
+     git **clone** https://github.com/Akcio23/PI-4-semestre
+
+- 2. Install the dependencies:
 - **npm install**
 
-- 3) Create a .env file at the root of the project with the following variables:
+- 3. Create a .env file at the root of the project with the following variables:
 
 - DATABASE_URL=mongodb://localhost:27017/database-name
 - KEY=your-secret-key
 
-- 4) Start the server:
+- 4. Start the server:
 - **npm run dev**
 
 # Endpoints
 
-##  POST /login/signup
+## POST /login/signup
 
 - Registers a new user. The user needs to provide a user, email, password and confirmedPassword.
 
 {
-    "user": "test",
-    "email": "test@gmail.com",
-    "password": "test",
-    "confirmedPassword": "test"
+"user": "test",
+"email": "test@gmail.com",
+"password": "test",
+"confirmedPassword": "test"
 }
 
 ### Response(Sucess - 200)
+
 {
-    message: user created successfully"
+message: user created successfully"
 }
 
 ### Response(Error-400)
+
 {
-    message: Error creating user
+message: Error creating user
 }
 
 ## POST/login/signin
@@ -66,16 +70,18 @@ git **clone** https://github.com/Akcio23/PI-4-semestre
 - Logs in an existing user. The user needs to provide the email and password.
 
 {
-  "email": "email@domain.com",
-  "password": "secret-password"
+"email": "email@domain.com",
+"password": "secret-password"
 }
 
 ### Response(Sucess - 200)
+
 {
-  "token": "your-generated-jwt-token"
+"token": "your-generated-jwt-token"
 }
 
 ### Response(Error-400)
+
 {
-  "message": "Invalid credentials"
+"message": "Invalid credentials"
 }
