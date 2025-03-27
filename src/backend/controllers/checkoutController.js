@@ -2,8 +2,10 @@ import pkg from 'jsonwebtoken'
 import register from '../service/userRegister.js'
 import login from '../service/userLogin.js'
 import getUserData from '../utils/getUserData.js'
+import dotenv from 'dotenv'
 
 const { sign } = pkg
+dotenv.config({ path: '.env' })
 
 class checkoutController {
   async signin(req, res) {

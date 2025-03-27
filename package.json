@@ -22,8 +22,8 @@
     "lint-staged": "^15.5.0"
   },
   "name": "pi-4-semestre",
-  "version": "1.0.0",
-  "description": "Os commits semânticos seguem uma estrutura padronizada para facilitar o entendimento das alterações realizadas no código. Abaixo estão os principais tipos de commits e suas respectivas descrições:",
+  "version": "1.4.0",
+  "description": "projeto clima tempo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

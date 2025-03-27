@@ -3,7 +3,6 @@ import routerGetUser from './routes/routerGetUser.js'
 import conectDataBase from './service/conectionDataBase.js'
 import configServer from './service/server.config.js'
 import { app } from './service/server.config.js'
-
 import dotenv from 'dotenv'
 
 dotenv.config({ path: '.env' })
