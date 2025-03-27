@@ -1,14 +1,12 @@
-import routercheckout from "./routes/routercheckout.js";
-import routerGetUser from "./routes/routerGetUser.js";
-import conectDataBase from "./service/conectionDataBase.js";
-import configServer from "./service/server.config.js";
-import { app } from "./service/server.config.js";
+import routercheckout from './routes/routercheckout.js'
+import routerGetUser from './routes/routerGetUser.js'
+import conectDataBase from './service/conectionDataBase.js'
+import configServer from './service/server.config.js'
+import { app } from './service/server.config.js'
 
-import dotenv from "dotenv"
+import dotenv from 'dotenv'
 
-dotenv.config({ path: '.env' });
-
-const test = process.env.PORT
+dotenv.config({ path: '.env' })
 
 //database
 conectDataBase()
@@ -20,9 +18,4 @@ app.use('/', routerGetUser)
 //config server.js
 configServer()
 
-export default app 
-
-
-
-
-
+export default app

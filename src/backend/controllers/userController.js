@@ -1,29 +1,32 @@
-import getUser from "../service/getUser.js"
+import getUser from '../service/getUser.js'
 
-class UserController{
+class UserController {
+  async getUser(req, res) {
+    try {
+      const { email } = req.query
 
-    async getUser(req, res){
-        const { email } = req.query
-    
-        if( !email ){
-            return res.status(401).json({
-                message: 'email field required'
-            })
-        }
-    
-        const user = await getUser( email )
-    
-        if( !user ){
-            return res.status(401).json({
-                message: 'user not found'
-            })
-        }
+      if (!email) {
+        return res.status(401).json({
+          message: 'email field required',
+        })
+      }
 
-        return res.status(201).json({ user })
-    
+      const user = await getUser(email)
+
+      if (!user) {
+        return res.status(401).json({
+          message: 'user not found',
+        })
+      }
+
+      return res.status(201).json({ user })
+    } catch (err) {
+      console.error('Erro no signin:', err)
+      if (!res.headersSent) {
+        return res.status(500).json({ error: 'Internal server error' })
+      }
     }
-
+  }
 }
 
 export default UserController
-
