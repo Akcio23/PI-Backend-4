@@ -62,17 +62,35 @@ Antes de executar a aplicação, certifique-se de ter instalado:
        "user": "nome-do-usuário",  
        "email": "email@dominio.com",  
        "password": "senha",  
-       "confirmedPassword": "senha"  
+       "confirmedPassword": "senha"
        }  
        ```  
             - **Resposta**  
-                 - Sucesso (200):  
+                  Sucesso (200):  
        ```  
        { "message": "Usuário criado com sucesso" }  
        ```    
-                 - Erro(400):  
+                    Erro(400):  
        ```  
        { "message": "Erro ao criar usuário" }  
        ```    
-  
+  - POST login/signin
+       - Autentica um usuário existente.
+            Corpo da requisição:
+         ```
+         {  
+           "email": "email@dominio.com",  
+           "password": "senha"  
+         }
+         ```  
+           - **Resposta**  
+                  Sucesso (200):  
+       ```  
+       { "token": "token-jwt-gerado" }   
+       ```  
+                Erro(400):  
+       ```    
+      { "message": "Credenciais inválidas" }  
+       ```    
+         
   
