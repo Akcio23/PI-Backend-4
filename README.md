@@ -136,7 +136,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
 │   ├── middlewares/       # Middlewares (ex: autenticação)
 │   ├── models/            # Modelos do banco de dados
 │   ├── routes/            # Definição das rotas da API
-│   ├── serializers/       # Serialização de dados (nome corrigido)
+│   ├── serializers/       # Serialização de dados  
 │   ├── service/           # Lógica de negócios/services
 │   ├── utils/             # Utilitários/helpers
 │   └── server.js          # Arquivo principal do servidor
