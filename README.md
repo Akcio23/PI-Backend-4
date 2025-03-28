@@ -75,7 +75,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
            Sucesso (200):
         
    
-                { "message": "Usuário criado com sucesso" }  
+              { "message": "Usuário criado com sucesso" }  
                 
            Erro(400):
         
@@ -104,6 +104,27 @@ Antes de executar a aplicação, certifique-se de ter instalado:
              Erro (400):
              ```
              { "message": "Credenciais inválidas" }
-             ``` 
+             ```
+         ***
+    - POST /user
+   
+         - Buscar usuario
+           
+            Corpo da requisição:
+           ```
+           {
+           "email": "email@dominio.com",  
+           "Authorization": "Bearer TOKENJWT"  
+           }  
+           ```
+              - ** Resposta**
+                   Sucesso(200):
+                   ```
+                   { { "user" } }
+                   ```
+                   Erro (400):
+                   ```
+                   { "message": 'Unauthorized'}
+                   ```
            
           
