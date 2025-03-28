@@ -61,25 +61,28 @@ Antes de executar a aplicação, certifique-se de ter instalado:
   
    - Registra um novo usuário.
      
-        Corpo da requisição:  
-       ```
-       {  
-       "user": "nome-do-usuário",  
-       "email": "email@dominio.com",  
-       "password": "senha",  
-       "confirmedPassword": "senha"
-       }  
-       ```  
+        Corpo da requisição:
+        
+          ```
+          {  
+          "user": "nome-do-usuário",  
+          "email": "email@dominio.com",  
+          "password": "senha",  
+          "confirmedPassword": "senha"
+          }  
+          ```  
       - **Resposta**
         
-        Sucesso (200):  
-       ```  
-       { "message": "Usuário criado com sucesso" }  
-       ```    
-        Erro(400):  
-       ```  
-       { "message": "Erro ao criar usuário" }  
-       ```    
+           Sucesso (200):  
+                ```  
+                { "message": "Usuário criado com sucesso" }  
+                ```    
+           Erro(400):  
+             ```  
+             { "message": "Erro ao criar usuário" }  
+             ```
+        ***
+        
   - POST login/signin
     
        - Autentica um usuário existente.
