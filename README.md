@@ -130,16 +130,16 @@ Antes de executar a aplicação, certifique-se de ter instalado:
                    ```
 ---
 ## Estrutura do Projeto
-
-├── src/backend  
-│   ├── controllers/  
-│   ├── middlewares/        
-│   ├── models/      
-│   ├── routes/      
-│   ├── serialaizer/    
-|   ├── service/  
-|   ├── utils/   
-│   └── server.js          
-├── .env                    
-└── package.json  
+```plaintext
+├── src/backend/
+│   ├── controllers/       # Lógica dos controladores
+│   ├── middlewares/       # Middlewares (ex: autenticação)
+│   ├── models/            # Modelos do banco de dados
+│   ├── routes/            # Definição das rotas da API
+│   ├── serializers/       # Serialização de dados (nome corrigido)
+│   ├── service/           # Lógica de negócios/services
+│   ├── utils/             # Utilitários/helpers
+│   └── server.js          # Arquivo principal do servidor
+├── .env                   # Variáveis de ambiente
+└── package.json           # Dependências do projeto
           
