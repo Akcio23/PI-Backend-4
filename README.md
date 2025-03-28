@@ -54,10 +54,10 @@ Antes de executar a aplicação, certifique-se de ter instalado:
    npm run dev
    ```
 ## Endpoints
-- POST /login/signup
-       Registra um novo usuário.
-       Corpo da requisição:
-       ```JSON
+- POST /login/signup  
+       - Registra um novo usuário.
+         - Corpo da requisição:
+       ```
        {
        "user": "nome-do-usuário",
        "email": "email@dominio.com",
@@ -65,13 +65,13 @@ Antes de executar a aplicação, certifique-se de ter instalado:
        "confirmedPassword": "senha"
        }
        ```
-       **Resposta**
-       - Sucesso (200):
-       ```JSON
+         - **Resposta**
+           - Sucesso (200):
+       ```
        { "message": "Usuário criado com sucesso" }
        ```
-       - Erro(400):
-       ```JSON
+           - Erro(400):
+       ```
        { "message": "Erro ao criar usuário" }
        ```
   
