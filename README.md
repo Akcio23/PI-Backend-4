@@ -75,14 +75,14 @@ Antes de executar a aplicação, certifique-se de ter instalado:
         
            Sucesso (200):
         
-                ```  
+   
                 { "message": "Usuário criado com sucesso" }  
-                ```    
+                
            Erro(400):
         
-             ```  
+             
              { "message": "Erro ao criar usuário" }  
-             ```
+             
         ***
         
   - POST login/signin
