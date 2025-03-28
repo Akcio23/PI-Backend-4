@@ -63,14 +63,13 @@ Antes de executar a aplicação, certifique-se de ter instalado:
      
         Corpo da requisição:
         
-          ```
           {  
           "user": "nome-do-usuário",  
           "email": "email@dominio.com",  
           "password": "senha",  
           "confirmedPassword": "senha"
           }  
-          ```  
+          
       - **Resposta**
         
            Sucesso (200):
