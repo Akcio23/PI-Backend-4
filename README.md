@@ -4,14 +4,14 @@ Esta é uma API simples para autenticação de usuários, com funcionalidades de
 
 ---
 
-## Funcionalidades
+## 🔧Funcionalidades
 - **Registro de Usuário**: Permite que um novo usuário se cadastre na plataforma.
 - **Login de Usuário**: Permite que um usuário existente faça login e receba um token JWT para autenticação em outras rotas.
 - **Rotas protegidas**: Criação de middleware para proteção de rotas.
 
 ---
 
-## Tecnologias Utilizadas
+## 🚀Tecnologias Utilizadas
 - **Node.js**: Ambiente de execução JavaScript para o servidor.
 - **Express.js**: Framework para construção da API.
 - **MongoDB**: Banco de dados NoSQL para armazenar dados dos usuários.
@@ -25,14 +25,14 @@ Esta é uma API simples para autenticação de usuários, com funcionalidades de
 
 ---
 
-## Pré-requisitos
+## ⁉️Pré-requisitos
 Antes de executar a aplicação, certifique-se de ter instalado:
 - Node.js (versão 14 ou superior)
 - MongoDB (local ou via MongoDB Atlas)
 
 ---
 
-## Instalação
+## 🛠️Instalação
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Akcio23/PI-4-semestre
@@ -55,7 +55,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
    ```
    ---
    
-## Endpoints
+## 〽️Endpoints
 
 - POST /login/signup
   
@@ -129,7 +129,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
                    { "message": 'Unauthorized'}
                    ```
 ---
-## Estrutura do Projeto
+## 📁Estrutura do Projeto
 ```plaintext
 ├── src/backend/
 │   ├── controllers/       # Lógica dos controladores
