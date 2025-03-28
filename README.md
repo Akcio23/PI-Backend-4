@@ -53,7 +53,10 @@ Antes de executar a aplicação, certifique-se de ter instalado:
    ```
    npm run dev
    ```
+   ---
+   
 ## Endpoints
+
 - POST /login/signup  
        - Registra um novo usuário.  
              Corpo da requisição:  
@@ -75,7 +78,9 @@ Antes de executar a aplicação, certifique-se de ter instalado:
        { "message": "Erro ao criar usuário" }  
        ```    
   - POST login/signin
+    
        - Autentica um usuário existente.
+         
             Corpo da requisição:
          ```
          {  
@@ -85,12 +90,12 @@ Antes de executar a aplicação, certifique-se de ter instalado:
          ```  
            - **Resposta**  
                   Sucesso (200):  
-       ```  
-       { "token": "token-jwt-gerado" }   
-       ```  
-                Erro(400):  
-       ```    
-      { "message": "Credenciais inválidas" }  
-       ```    
-         
-  
+             ```
+             { "token": "token-jwt-gerado" }  
+             ```  
+               Erro (400):
+             ```
+             { "message": "Credenciais inválidas" }
+             ``` 
+           
+          
