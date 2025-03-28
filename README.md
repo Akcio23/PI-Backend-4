@@ -73,11 +73,13 @@ Antes de executar a aplicação, certifique-se de ter instalado:
           ```  
       - **Resposta**
         
-           Sucesso (200):  
+           Sucesso (200):
+        
                 ```  
                 { "message": "Usuário criado com sucesso" }  
                 ```    
-           Erro(400):  
+           Erro(400):
+        
              ```  
              { "message": "Erro ao criar usuário" }  
              ```
