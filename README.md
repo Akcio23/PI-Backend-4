@@ -117,7 +117,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
            "Authorization": "Bearer TOKENJWT"  
            }  
            ```
-              - ** Resposta**
+              - **Resposta**  
                    Sucesso(200):
                    ```
                    { { "user" } }
