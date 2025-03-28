@@ -131,15 +131,15 @@ Antes de executar a aplicação, certifique-se de ter instalado:
 ---
 ## Estrutura do Projeto
 
-├── src/backend
-│   ├── controllers/      
+├── src/backend  
+│   ├── controllers/  
 │   ├── middlewares/        
-│   ├── models/           
+│   ├── models/      
 │   ├── routes/      
-│   ├── serialaizer/  
-|   ├── service/
-|   ├── utils/ 
-│   └── server.js        
-├── .env                  
-└── package.json
+│   ├── serialaizer/    
+|   ├── service/  
+|   ├── utils/   
+│   └── server.js          
+├── .env                    
+└── package.json  
           
