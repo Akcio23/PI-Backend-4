@@ -106,6 +106,7 @@ Antes de executar a aplicação, certifique-se de ter instalado:
              { "message": "Credenciais inválidas" }
              ```
          ***
+         
     - POST /user
    
          - Buscar usuario
@@ -117,7 +118,8 @@ Antes de executar a aplicação, certifique-se de ter instalado:
            "Authorization": "Bearer TOKENJWT"  
            }  
            ```
-              - **Resposta**  
+              - **Resposta**
+                
                    Sucesso(200):
                    ```
                    { { "user" } }
@@ -126,5 +128,18 @@ Antes de executar a aplicação, certifique-se de ter instalado:
                    ```
                    { "message": 'Unauthorized'}
                    ```
-           
+---
+## Estrutura do Projeto
+
+├── src/backend
+│   ├── controllers/      
+│   ├── middlewares/        
+│   ├── models/           
+│   ├── routes/      
+│   ├── serialaizer/  
+|   ├── service/
+|   ├── utils/ 
+│   └── server.js        
+├── .env                  
+└── package.json
           
