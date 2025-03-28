@@ -56,23 +56,23 @@ Antes de executar a aplicação, certifique-se de ter instalado:
 ## Endpoints
 - POST /login/signup  
        - Registra um novo usuário.  
-         - Corpo da requisição:  
+             Corpo da requisição:  
        ```
-       {
-       "user": "nome-do-usuário",
-       "email": "email@dominio.com",
-       "password": "senha",
-       "confirmedPassword": "senha"
-       }
+       {  
+       "user": "nome-do-usuário",  
+       "email": "email@dominio.com",  
+       "password": "senha",  
+       "confirmedPassword": "senha"  
+       }  
        ```  
-         - **Resposta**  
-           - Sucesso (200):  
-       ```
-       { "message": "Usuário criado com sucesso" }
+            - **Resposta**  
+                 - Sucesso (200):  
        ```  
-           - Erro(400):  
-       ```
-       { "message": "Erro ao criar usuário" }
+       { "message": "Usuário criado com sucesso" }  
+       ```    
+                 - Erro(400):  
        ```  
+       { "message": "Erro ao criar usuário" }  
+       ```    
   
   
