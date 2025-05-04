@@ -3,6 +3,7 @@ function userSerialaizer(user) {
     _id: user._id.toString(),
     email: user.email,
     user: user.user,
+    city: user.city || null,
   }
 }
 
