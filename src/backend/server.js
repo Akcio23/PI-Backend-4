@@ -1,6 +1,7 @@
 import routercheckout from './routes/routercheckout.js'
 import routerUser from './routes/routerUser.js'
 import routerHg from './routes/routerHgApi.js'
+import routerNews from './routes/routerNews.js'
 import conectDataBase from './service/conectionDataBase.js'
 import configServer from './service/server.config.js'
 import { app } from './service/server.config.js'
@@ -15,6 +16,7 @@ conectDataBase()
 app.use('/login', routercheckout)
 app.use('/', routerUser)
 app.use('/api', routerHg)
+app.use('/api', routerNews)
 
 //config server.js
 configServer()

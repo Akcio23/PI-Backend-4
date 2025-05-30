@@ -6,7 +6,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.12.1"
+    "mongoose": "^8.12.1",
+    "puppeteer": "^24.9.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.0",
@@ -31,7 +32,8 @@
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "prepare": "husky install"
-  },  "lint-staged": {
+  },
+  "lint-staged": {
     "**/*.{js,jsx,ts,tsx,css}": [
       "prettier --write",
       "eslint --fix"
