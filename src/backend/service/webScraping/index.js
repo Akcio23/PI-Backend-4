@@ -31,7 +31,7 @@ export async function scrapeClimatempoComPuppeteer() {
       const resultado = []
 
       for (const card of cards) {
-        if (resultado.length >= 6) break
+        if (resultado.length >= 9) break
 
         const aTag = card.querySelector('a[href*="/noticia/"]')
         const imgTag = card.querySelector('img')
