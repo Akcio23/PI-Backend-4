@@ -31,7 +31,8 @@
     "dev": "nodemon src/backend/server.js",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node src/backend/server.js"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,css}": [
