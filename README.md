@@ -8,7 +8,7 @@ Esta é uma API simples para autenticação de usuários, com funcionalidades de
 - **Login de Usuário**: Permite que um usuário existente faça login e receba um token JWT para autenticação em outras rotas
 - **Rotas protegidas**: Criação de middleware para proteção de rotas
 - **Dados sobre o tempo de várias cidades**: API de previsão do tempo
-- **Dados sobre o tempo em tempo real**: Utilizando Arduino para medir a temperatura do ambiente em tempo real
+- **Informações sobre o clima em tempo real**: Utilizando Arduino para medir a temperatura do ambiente em tempo real
 - **Notícias sobre o clima do Brasil e do mundo**: API para buscar notícias sobre o tempo
 
 ## 🚀 Tecnologias Utilizadas
