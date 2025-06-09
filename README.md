@@ -81,6 +81,7 @@ Registra um novo usuário.
   ```json
   { "message": "Erro ao criar usuário" }  
   ```
+***
 
 #### POST `/login/signin`
 Autentica um usuário existente.
@@ -102,7 +103,7 @@ Autentica um usuário existente.
   ```json
   { "message": "Credenciais inválidas" }
   ```
-
+***
 ### Usuários
 
 #### POST `/user`
@@ -129,6 +130,7 @@ Authorization: Bearer TOKENJWT
   ```json
   { "message": "Unauthorized" }
   ```
+  ***
 
 ### Clima e Tempo
 
@@ -147,6 +149,7 @@ Buscar informações climáticas de uma cidade.
   ```json
   { "error": "field city required" }
   ```
+***
 
 #### GET `/api/temp`
 Buscar temperatura em tempo real (Arduino).
@@ -165,7 +168,7 @@ Buscar temperatura em tempo real (Arduino).
   ```json
   { "error": "Erro ao buscar temperatura" }
   ```
-
+***
 ### Notícias
 
 #### GET `/api/news`
