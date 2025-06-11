@@ -16,6 +16,7 @@ const userSchema = new mongoose.Schema({
   },
   city: {
     type: String,
+    default: 'Franca',
   },
 })
 
